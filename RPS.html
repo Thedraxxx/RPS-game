@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS Game.</title>
+    <link rel="stylesheet" href="RPS.css" />
+    <link rel="stylesheet" href="RPS.js" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tauko">
+        <header>
+        <p>Rock        Paper              Scissor</p>
+    </header>
+     
+      </div>
+
+      <div class="jeu">
+        <button 
+           class="Rock"
+          onclick="
+                  const randomnum = Math.random();
+                  let computer_pick='';
+                  if(randomnum>=0 && randomnum<1/3)
+                  {
+                 computer_pick = 'Rock';
+                  } 
+                  else if(randomnum >=1/3 && randomnum < 2/3)
+                  {
+                   computer_pick = 'Paper';
+                  }
+                  else if(randomnum >= 2/3 && randomnum <1){
+
+                  computer_pick= 'Scissor';
+                  }
+                  console.log(computer_pick);
+            let result='';
+                  if(computer_pick=='Rock')
+                  {
+                    result = 'Tie';
+                  }
+                  else if(computer_pick=='Paper')
+                  {
+                    result = 'You lose.';
+                  }
+                  else if(computer_pick=='Scissor'){
+                    result ='you won.';
+                  }
+                  alert(`You pick rock, computer pick ${computer_pick},${result}`);
+                  ">
+          Rock.</button>
+        <button class="Paper"
+         onclick="
+           const randomnum = Math.random();
+                  let computer_pick='';
+                  if(randomnum>=0 && randomnum<1/3)
+                  {
+                 computer_pick = 'Rock';
+                  } 
+                  else if(randomnum >=1/3 && randomnum < 2/3)
+                  {
+                   computer_pick = 'Paper';
+                  }
+                  else if(randomnum >= 2/3 && randomnum <1){
+
+                  computer_pick= 'Scissor';
+                  }
+                  console.log(computer_pick);
+            let result ='';
+                  if(computer_pick=='Rock')
+                  {
+                    result = 'You won';
+                  }
+                  else if(computer_pick=='Paper')
+                  {
+                    result = 'Tie.';
+                  }
+                  else if(computer_pick=='Scissor') {
+                    result ='You lose.';
+                  }
+                  alert(`You pick Paper, computer pick ${computer_pick},${result}`);
+         ">Paper.</button>
+        <button
+         class="Scissor"
+        onclick="
+        const randomnum = Math.random();
+                  let computer_pick='';
+                  if(randomnum>=0 && randomnum<1/3)
+                  {
+                 computer_pick = 'Rock';
+                  } 
+                  else if(randomnum >=1/3 && randomnum < 2/3)
+                  {
+                   computer_pick = 'Paper';
+                  }
+                  else if(randomnum >= 2/3 && randomnum <1){
+
+                  computer_pick= 'Scissor';
+                  }
+                  console.log(computer_pick);
+            let result ='';
+                  if(computer_pick=='Rock')
+                  {
+                    result = 'You lose';
+                  }
+                  else if(computer_pick=='Paper')
+                  {
+                    result = 'You won';
+                  }
+                  else if(computer_pick=='Scissor') {
+                    result ='Tie.';
+                  }
+                  alert(`You pick Scissor, computer pick ${computer_pick},${result}`);"
+        >Scissor.</button>
+      </div>
+    </div>
+    <script>
+
+    </script>
+  </body>
+</html>
